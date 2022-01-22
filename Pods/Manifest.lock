@@ -1,0 +1,16 @@
+PODS:
+  - EmojiPicker (1.1)
+
+DEPENDENCIES:
+  - EmojiPicker (= 1.1)
+
+SPEC REPOS:
+  trunk:
+    - EmojiPicker
+
+SPEC CHECKSUMS:
+  EmojiPicker: 7d9cb698a2983501c0fa800e759dd7744638a0b9
+
+PODFILE CHECKSUM: cf7b867f03a710a2bcd46ea7c2459e62b4e44fc1
+
+COCOAPODS: 1.11.2

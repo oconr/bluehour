@@ -1,0 +1,604 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8A87BFB82767F8710088CFC0 /* EmojiPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A87BFB72767F8710088CFC0 /* EmojiPicker.swift */; };
+		8A87BFBA276809510088CFC0 /* CalendarNewTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A87BFB9276809510088CFC0 /* CalendarNewTypeView.swift */; };
+		8A87BFBD27680CA30088CFC0 /* SettingsCalendarTypesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A87BFBC27680CA30088CFC0 /* SettingsCalendarTypesView.swift */; };
+		8A87BFBF276829EA0088CFC0 /* CalendarEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A87BFBE276829EA0088CFC0 /* CalendarEvent.swift */; };
+		8AB54E0D276671840067CC55 /* SwiftUIPager in Frameworks */ = {isa = PBXBuildFile; productRef = 8AB54E0C276671840067CC55 /* SwiftUIPager */; };
+		8AB54E0F2766737F0067CC55 /* CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB54E0E2766737F0067CC55 /* CornerRadius.swift */; };
+		8AB6EDE22766373D0070F9AA /* BlueHour.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8AB6EDE02766373D0070F9AA /* BlueHour.xcdatamodeld */; };
+		8AB6EDE427663A590070F9AA /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB6EDE327663A590070F9AA /* PersistenceController.swift */; };
+		8AB6EDE827663BB50070F9AA /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AB6EDE727663BB50070F9AA /* CloudKit.framework */; };
+		8AB6EDEB2766421B0070F9AA /* TodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB6EDEA2766421B0070F9AA /* TodoView.swift */; };
+		8AB6EDEE27664A510070F9AA /* CalendarWeeklyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB6EDED27664A510070F9AA /* CalendarWeeklyView.swift */; };
+		8ACA92A52767E4F9005A586E /* CalendarBlankHour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ACA92A42767E4F9005A586E /* CalendarBlankHour.swift */; };
+		8ACA92A72767EE56005A586E /* CalendarDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ACA92A62767EE56005A586E /* CalendarDayView.swift */; };
+		8ACA92A92767F173005A586E /* CalendarNewEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ACA92A82767F173005A586E /* CalendarNewEventView.swift */; };
+		8ADFCA07276596B5007B727A /* BlueHour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADFCA06276596B5007B727A /* BlueHour.swift */; };
+		8ADFCA09276596B5007B727A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADFCA08276596B5007B727A /* ContentView.swift */; };
+		8ADFCA0B276596B6007B727A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8ADFCA0A276596B6007B727A /* Assets.xcassets */; };
+		8ADFCA0E276596B6007B727A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8ADFCA0D276596B6007B727A /* Preview Assets.xcassets */; };
+		8ADFCA1B27659812007B727A /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADFCA1A27659812007B727A /* Calendar.swift */; };
+		8ADFCA1D276598A4007B727A /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADFCA1C276598A4007B727A /* Todo.swift */; };
+		8ADFCA2027659B37007B727A /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADFCA1F27659B37007B727A /* Color.swift */; };
+		8ADFCA222765A7EF007B727A /* FontSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADFCA212765A7EF007B727A /* FontSize.swift */; };
+		8ADFCA242766097C007B727A /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADFCA232766097C007B727A /* Config.swift */; };
+		8ADFCA2627660D06007B727A /* Themes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADFCA2527660D06007B727A /* Themes.swift */; };
+		8ADFCA2827661CFA007B727A /* Notes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADFCA2727661CFA007B727A /* Notes.swift */; };
+		8ADFCA2A27661D18007B727A /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADFCA2927661D18007B727A /* Settings.swift */; };
+		8ADFCA2E276620A5007B727A /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADFCA2D276620A5007B727A /* Theme.swift */; };
+		E270D2BE28ADB468CC756DF3 /* Pods_Blue_Hour.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5C14694365DF4400B3C906A /* Pods_Blue_Hour.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0A59FA07AC50853EA258AEAF /* Pods-Blue Hour.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Blue Hour.debug.xcconfig"; path = "Target Support Files/Pods-Blue Hour/Pods-Blue Hour.debug.xcconfig"; sourceTree = "<group>"; };
+		8A87BFB72767F8710088CFC0 /* EmojiPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiPicker.swift; sourceTree = "<group>"; };
+		8A87BFB9276809510088CFC0 /* CalendarNewTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarNewTypeView.swift; sourceTree = "<group>"; };
+		8A87BFBC27680CA30088CFC0 /* SettingsCalendarTypesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCalendarTypesView.swift; sourceTree = "<group>"; };
+		8A87BFBE276829EA0088CFC0 /* CalendarEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarEvent.swift; sourceTree = "<group>"; };
+		8AB54E0E2766737F0067CC55 /* CornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerRadius.swift; sourceTree = "<group>"; };
+		8AB6EDE12766373D0070F9AA /* BlueHour.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BlueHour.xcdatamodel; sourceTree = "<group>"; };
+		8AB6EDE327663A590070F9AA /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
+		8AB6EDE527663B920070F9AA /* Blue Hour.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Blue Hour.entitlements"; sourceTree = "<group>"; };
+		8AB6EDE727663BB50070F9AA /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		8AB6EDEA2766421B0070F9AA /* TodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoView.swift; sourceTree = "<group>"; };
+		8AB6EDED27664A510070F9AA /* CalendarWeeklyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarWeeklyView.swift; sourceTree = "<group>"; };
+		8ACA92A42767E4F9005A586E /* CalendarBlankHour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarBlankHour.swift; sourceTree = "<group>"; };
+		8ACA92A62767EE56005A586E /* CalendarDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarDayView.swift; sourceTree = "<group>"; };
+		8ACA92A82767F173005A586E /* CalendarNewEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarNewEventView.swift; sourceTree = "<group>"; };
+		8ADFCA03276596B5007B727A /* Blue Hour.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Blue Hour.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8ADFCA06276596B5007B727A /* BlueHour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueHour.swift; sourceTree = "<group>"; };
+		8ADFCA08276596B5007B727A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8ADFCA0A276596B6007B727A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8ADFCA0D276596B6007B727A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8ADFCA1A27659812007B727A /* Calendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calendar.swift; sourceTree = "<group>"; };
+		8ADFCA1C276598A4007B727A /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
+		8ADFCA1F27659B37007B727A /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		8ADFCA212765A7EF007B727A /* FontSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontSize.swift; sourceTree = "<group>"; };
+		8ADFCA232766097C007B727A /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		8ADFCA2527660D06007B727A /* Themes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Themes.swift; sourceTree = "<group>"; };
+		8ADFCA2727661CFA007B727A /* Notes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notes.swift; sourceTree = "<group>"; };
+		8ADFCA2927661D18007B727A /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		8ADFCA2D276620A5007B727A /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		B5C14694365DF4400B3C906A /* Pods_Blue_Hour.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Blue_Hour.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA90F1A0FD149B91DE3B7264 /* Pods-Blue Hour.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Blue Hour.release.xcconfig"; path = "Target Support Files/Pods-Blue Hour/Pods-Blue Hour.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8ADFCA00276596B5007B727A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AB54E0D276671840067CC55 /* SwiftUIPager in Frameworks */,
+				8AB6EDE827663BB50070F9AA /* CloudKit.framework in Frameworks */,
+				E270D2BE28ADB468CC756DF3 /* Pods_Blue_Hour.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8A87BFBB27680C8D0088CFC0 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				8A87BFBC27680CA30088CFC0 /* SettingsCalendarTypesView.swift */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		8AB6EDE627663BB50070F9AA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8AB6EDE727663BB50070F9AA /* CloudKit.framework */,
+				B5C14694365DF4400B3C906A /* Pods_Blue_Hour.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8AB6EDE9276642000070F9AA /* Todo */ = {
+			isa = PBXGroup;
+			children = (
+				8AB6EDEA2766421B0070F9AA /* TodoView.swift */,
+			);
+			path = Todo;
+			sourceTree = "<group>";
+		};
+		8AB6EDEC27664A440070F9AA /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				8AB6EDED27664A510070F9AA /* CalendarWeeklyView.swift */,
+				8ACA92A42767E4F9005A586E /* CalendarBlankHour.swift */,
+				8ACA92A62767EE56005A586E /* CalendarDayView.swift */,
+				8ACA92A82767F173005A586E /* CalendarNewEventView.swift */,
+				8A87BFB9276809510088CFC0 /* CalendarNewTypeView.swift */,
+				8A87BFBE276829EA0088CFC0 /* CalendarEvent.swift */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		8ADFC9FA276596B5007B727A = {
+			isa = PBXGroup;
+			children = (
+				8ADFCA05276596B5007B727A /* Blue Hour */,
+				8ADFCA04276596B5007B727A /* Products */,
+				8AB6EDE627663BB50070F9AA /* Frameworks */,
+				E93007BA2A7A2B2D8A430F86 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		8ADFCA04276596B5007B727A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8ADFCA03276596B5007B727A /* Blue Hour.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8ADFCA05276596B5007B727A /* Blue Hour */ = {
+			isa = PBXGroup;
+			children = (
+				8AB6EDE527663B920070F9AA /* Blue Hour.entitlements */,
+				8ADFCA1E276599C9007B727A /* Components */,
+				8ADFCA19276597FA007B727A /* Tabs */,
+				8ADFCA2B27662091007B727A /* Views */,
+				8ADFCA06276596B5007B727A /* BlueHour.swift */,
+				8ADFCA08276596B5007B727A /* ContentView.swift */,
+				8ADFCA0A276596B6007B727A /* Assets.xcassets */,
+				8AB6EDE02766373D0070F9AA /* BlueHour.xcdatamodeld */,
+				8ADFCA0C276596B6007B727A /* Preview Content */,
+			);
+			path = "Blue Hour";
+			sourceTree = "<group>";
+		};
+		8ADFCA0C276596B6007B727A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				8ADFCA0D276596B6007B727A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8ADFCA19276597FA007B727A /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				8ADFCA1A27659812007B727A /* Calendar.swift */,
+				8ADFCA1C276598A4007B727A /* Todo.swift */,
+				8ADFCA2727661CFA007B727A /* Notes.swift */,
+				8ADFCA2927661D18007B727A /* Settings.swift */,
+			);
+			path = Tabs;
+			sourceTree = "<group>";
+		};
+		8ADFCA1E276599C9007B727A /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				8ADFCA1F27659B37007B727A /* Color.swift */,
+				8ADFCA232766097C007B727A /* Config.swift */,
+				8ADFCA212765A7EF007B727A /* FontSize.swift */,
+				8ADFCA2527660D06007B727A /* Themes.swift */,
+				8AB6EDE327663A590070F9AA /* PersistenceController.swift */,
+				8AB54E0E2766737F0067CC55 /* CornerRadius.swift */,
+				8A87BFB72767F8710088CFC0 /* EmojiPicker.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		8ADFCA2B27662091007B727A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8AB6EDEC27664A440070F9AA /* Calendar */,
+				8AB6EDE9276642000070F9AA /* Todo */,
+				8ADFCA2C27662096007B727A /* Settings */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8ADFCA2C27662096007B727A /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				8A87BFBB27680C8D0088CFC0 /* Calendar */,
+				8ADFCA2D276620A5007B727A /* Theme.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		E93007BA2A7A2B2D8A430F86 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0A59FA07AC50853EA258AEAF /* Pods-Blue Hour.debug.xcconfig */,
+				EA90F1A0FD149B91DE3B7264 /* Pods-Blue Hour.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8ADFCA02276596B5007B727A /* Blue Hour */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8ADFCA16276596B6007B727A /* Build configuration list for PBXNativeTarget "Blue Hour" */;
+			buildPhases = (
+				41CD0992C340A383F41BAA44 /* [CP] Check Pods Manifest.lock */,
+				8ADFC9FF276596B5007B727A /* Sources */,
+				8ADFCA00276596B5007B727A /* Frameworks */,
+				8ADFCA01276596B5007B727A /* Resources */,
+				3030B763F86D8DDDE60AAAED /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Blue Hour";
+			packageProductDependencies = (
+				8AB54E0C276671840067CC55 /* SwiftUIPager */,
+			);
+			productName = todo;
+			productReference = 8ADFCA03276596B5007B727A /* Blue Hour.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8ADFC9FB276596B5007B727A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					8ADFCA02276596B5007B727A = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = 8ADFC9FE276596B5007B727A /* Build configuration list for PBXProject "Blue Hour" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8ADFC9FA276596B5007B727A;
+			packageReferences = (
+				8AB54E0B276671840067CC55 /* XCRemoteSwiftPackageReference "SwiftUIPager" */,
+			);
+			productRefGroup = 8ADFCA04276596B5007B727A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8ADFCA02276596B5007B727A /* Blue Hour */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8ADFCA01276596B5007B727A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8ADFCA0E276596B6007B727A /* Preview Assets.xcassets in Resources */,
+				8ADFCA0B276596B6007B727A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3030B763F86D8DDDE60AAAED /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Blue Hour/Pods-Blue Hour-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Blue Hour/Pods-Blue Hour-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Blue Hour/Pods-Blue Hour-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		41CD0992C340A383F41BAA44 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Blue Hour-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8ADFC9FF276596B5007B727A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8ADFCA1D276598A4007B727A /* Todo.swift in Sources */,
+				8A87BFBF276829EA0088CFC0 /* CalendarEvent.swift in Sources */,
+				8ADFCA242766097C007B727A /* Config.swift in Sources */,
+				8A87BFB82767F8710088CFC0 /* EmojiPicker.swift in Sources */,
+				8ACA92A92767F173005A586E /* CalendarNewEventView.swift in Sources */,
+				8AB6EDEB2766421B0070F9AA /* TodoView.swift in Sources */,
+				8A87BFBA276809510088CFC0 /* CalendarNewTypeView.swift in Sources */,
+				8ADFCA2627660D06007B727A /* Themes.swift in Sources */,
+				8ACA92A52767E4F9005A586E /* CalendarBlankHour.swift in Sources */,
+				8ADFCA2E276620A5007B727A /* Theme.swift in Sources */,
+				8ADFCA2827661CFA007B727A /* Notes.swift in Sources */,
+				8ADFCA2027659B37007B727A /* Color.swift in Sources */,
+				8ADFCA2A27661D18007B727A /* Settings.swift in Sources */,
+				8AB6EDEE27664A510070F9AA /* CalendarWeeklyView.swift in Sources */,
+				8A87BFBD27680CA30088CFC0 /* SettingsCalendarTypesView.swift in Sources */,
+				8AB6EDE22766373D0070F9AA /* BlueHour.xcdatamodeld in Sources */,
+				8ADFCA222765A7EF007B727A /* FontSize.swift in Sources */,
+				8ADFCA09276596B5007B727A /* ContentView.swift in Sources */,
+				8ADFCA07276596B5007B727A /* BlueHour.swift in Sources */,
+				8AB6EDE427663A590070F9AA /* PersistenceController.swift in Sources */,
+				8ACA92A72767EE56005A586E /* CalendarDayView.swift in Sources */,
+				8AB54E0F2766737F0067CC55 /* CornerRadius.swift in Sources */,
+				8ADFCA1B27659812007B727A /* Calendar.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8ADFCA14276596B6007B727A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8ADFCA15276596B6007B727A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8ADFCA17276596B6007B727A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A59FA07AC50853EA258AEAF /* Pods-Blue Hour.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Blue Hour/Blue Hour.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Blue Hour/Preview Content\"";
+				DEVELOPMENT_TEAM = 8J4JJZ8MQ2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.oconr.bluehour;
+				PRODUCT_NAME = "Blue Hour";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		8ADFCA18276596B6007B727A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA90F1A0FD149B91DE3B7264 /* Pods-Blue Hour.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Blue Hour/Blue Hour.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Blue Hour/Preview Content\"";
+				DEVELOPMENT_TEAM = 8J4JJZ8MQ2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.oconr.bluehour;
+				PRODUCT_NAME = "Blue Hour";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8ADFC9FE276596B5007B727A /* Build configuration list for PBXProject "Blue Hour" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8ADFCA14276596B6007B727A /* Debug */,
+				8ADFCA15276596B6007B727A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8ADFCA16276596B6007B727A /* Build configuration list for PBXNativeTarget "Blue Hour" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8ADFCA17276596B6007B727A /* Debug */,
+				8ADFCA18276596B6007B727A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8AB54E0B276671840067CC55 /* XCRemoteSwiftPackageReference "SwiftUIPager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/fermoya/SwiftUIPager.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8AB54E0C276671840067CC55 /* SwiftUIPager */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8AB54E0B276671840067CC55 /* XCRemoteSwiftPackageReference "SwiftUIPager" */;
+			productName = SwiftUIPager;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		8AB6EDE02766373D0070F9AA /* BlueHour.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8AB6EDE12766373D0070F9AA /* BlueHour.xcdatamodel */,
+			);
+			currentVersion = 8AB6EDE12766373D0070F9AA /* BlueHour.xcdatamodel */;
+			path = BlueHour.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 8ADFC9FB276596B5007B727A /* Project object */;
+}
